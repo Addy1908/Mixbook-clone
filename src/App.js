@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Banner from './components/Banner'
+import Create from './components/Create'
+import Createcard from './components/Createcard'
+import Createnext from './components/Createnext'
+import Videocomp from './components/Videocomp'
+import Community from './components/Community'
+import CommunityCard from './components/CommunityCard'
+import Contact from './components/Contact'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Header/>
+    <Navbar/>
+    <Banner/>
+    <Create/>
+    <Createcard/>
+    <Createnext/>
+    <Videocomp/>
+    <Community/>
+    <CommunityCard/>
+    <Contact/>
+
+    </>
+  )
 }
 
-export default App;
